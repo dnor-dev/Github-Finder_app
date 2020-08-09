@@ -1,0 +1,238 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 0.5px;
+    background: #eaeaea;
+    overflow-x: hidden;
+}
+
+img{
+    margin: auto;
+    width: 100%;
+}
+.container{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.containment{
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+.btn{
+    display: block;
+    margin: 1rem;
+    margin: auto;
+    padding: 1rem;
+    background: rgb(4, 4, 141);
+    color: #eaeaea;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container h1{
+    padding:0 1rem;  
+    display: inline;
+    margin-block-start: 0;
+    margin-block-end: 0;  
+}
+
+.container p{
+    padding: 0 1rem;
+    margin-top: 5px;
+}
+
+.container .border-box{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1.7rem;
+}
+
+.container input{
+    width: 100%;
+    box-sizing: border-box !important;
+    height: 8px;
+    padding: 1rem;
+    background:#eaeaea ;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+header nav{
+    background:rgb(4, 4, 141);
+    overflow: hidden;
+    padding: 0.6rem;
+    padding-left: 15rem;
+}
+
+header nav h3{
+    color: #eaeaea;
+    font-size: 1.2rem;
+}
+.grid-2{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+#public-gists{
+    background: rgb(121, 121, 122);
+    padding: 10px;
+    margin: 5px;
+    font-size: 10px;
+    color:#eaeaea;
+    border-radius: 5px;
+}
+
+#public-repos{
+    background: rgb(34, 34, 102);
+    padding: 10px;
+    margin: 5px;
+    font-size: 10px;
+    color: #eaeaea;
+    border-radius: 5px;
+}
+
+#followers{
+    background: rgb(9, 143, 38);
+    padding: 10px;
+    margin: 5px;
+    font-size: 10px;
+    color: #eaeaea;
+    border-radius: 5px;
+}
+
+#following{
+    background: rgb(8, 114, 156);
+    padding: 10px;
+    margin: 5px;
+    font-size: 10px;
+    color: #eaeaea;
+    border-radius: 5px;
+}
+.about{
+    list-style: none;
+    font-size: 13px;
+    display: inline;
+}
+.about li{
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.alert-danger{
+    background: rgb(160, 7, 7);
+    color: white;
+    padding: 5px 0;
+    width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+
+}
+
+.pageHeading{
+    padding:0 1rem;
+    margin: 0 1rem;
+}
+
+.repo-link{
+    color: rgb(34, 34, 102);
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+.repo-views{
+    margin-left: 10rem;
+}
+
+
+.footer{
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 6rem auto;
+    text-align: center;
+}
+.footer h3{
+    margin: 8px;
+}
+
+
+
+@media screen and (max-width:760px){
+    header nav{
+        padding: 0.2rem;
+        padding-left: 1rem;
+    }
+
+    header nav h3{
+        font-size: 1rem;
+    }
+    .searchUsers{
+        width: 100%;
+        margin: auto;
+    }
+
+    .container,.containment{
+        max-width: 90%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .container h1{
+        font-size:1.3rem
+    }
+
+    .container p{
+        font-size: 1rem;
+    }
+
+    
+    .grid-2{
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+    .spans{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0;
+    }
+    .about{
+        margin-top: 0;
+    }
+    .repo-views{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem;
+    }
+
+    .footer{
+        margin: 1rem auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-height:500px){
+    header nav{
+        padding: 1rem;
+        padding-left:2rem;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .footer{
+        width: 100%;
+        margin: 3rem 0;
+    }
+}
+
